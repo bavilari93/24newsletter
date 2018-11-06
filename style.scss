@@ -9,7 +9,7 @@
 @mixin skew($color, $deg){
 	content:'';
 		position: absolute; 
-		height: 50vh;
+		height: 55vh;
 		width: 100%;
 		position: absolute; 
 		background: $color;
@@ -38,8 +38,11 @@ section{
 	@include flex; 
 	height:45vh;
 	width: 100%;
+	flex-direction: block;
 }
 .info-1{
+	margin:0 auto;
+	color: #92a8d1;	
 	&:before{
 		margin:{
 			top:-4rem;
@@ -47,20 +50,34 @@ section{
 		}
 		@include skew(#deeaee,6deg);
 	}
+	h1{
+		font-size:13rem;
+	}
+	h2{
+	margin-top:3rem;
+	font-size: 2rem;
+	width: 100%;
+	align-self:center;
+	}
  }
 .info-2{
+	color:#034f84;
+		font-size: 12rem;
 	margin:-2rem;
 	&:before{
 		@include skew(#92a8d1,6deg);
 	}
 }
 .info-3{
+	color:#3e4444; 
+	font-size: 15rem;
+	margin-top: -2rem;
 	&:before{
 		@include skew(#034f84,-4deg);
 	}
 }
 .info-4{
-	margin-top: -3rem;
+	margin-top: -4rem;
 	&:before{
 		@include skew(#3e4444,6deg);
 	}
@@ -70,6 +87,6 @@ section{
 		height:20rem;
 		width: 100%; 
 		background: #3e4444;
-		margin-top: 2rem;
+		margin-top: 5rem;
 	}
 }

@@ -23,27 +23,40 @@ section {
   justify-content: center;
   align-content: center;
   height: 45vh;
-  width: 100%; }
-
-.info-1:before {
-  margin-top: -4rem;
-  margin-bottom: 0;
-  content: '';
-  position: absolute;
-  height: 50vh;
   width: 100%;
-  position: absolute;
-  background: #deeaee;
-  transform: skewY(6deg);
-  overflow: visible;
-  z-index: -1; }
+  flex-direction: block; }
+
+.info-1 {
+  margin: 0 auto;
+  color: #92a8d1; }
+  .info-1:before {
+    margin-top: -4rem;
+    margin-bottom: 0;
+    content: '';
+    position: absolute;
+    height: 55vh;
+    width: 100%;
+    position: absolute;
+    background: #deeaee;
+    transform: skewY(6deg);
+    overflow: visible;
+    z-index: -1; }
+  .info-1 h1 {
+    font-size: 13rem; }
+  .info-1 h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    width: 100%;
+    align-self: center; }
 
 .info-2 {
+  color: #034f84;
+  font-size: 12rem;
   margin: -2rem; }
   .info-2:before {
     content: '';
     position: absolute;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     position: absolute;
     background: #92a8d1;
@@ -51,23 +64,27 @@ section {
     overflow: visible;
     z-index: -1; }
 
-.info-3:before {
-  content: '';
-  position: absolute;
-  height: 50vh;
-  width: 100%;
-  position: absolute;
-  background: #034f84;
-  transform: skewY(-4deg);
-  overflow: visible;
-  z-index: -1; }
+.info-3 {
+  color: #3e4444;
+  font-size: 15rem;
+  margin-top: -2rem; }
+  .info-3:before {
+    content: '';
+    position: absolute;
+    height: 55vh;
+    width: 100%;
+    position: absolute;
+    background: #034f84;
+    transform: skewY(-4deg);
+    overflow: visible;
+    z-index: -1; }
 
 .info-4 {
-  margin-top: -3rem; }
+  margin-top: -4rem; }
   .info-4:before {
     content: '';
     position: absolute;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     position: absolute;
     background: #3e4444;
@@ -80,6 +97,6 @@ section {
     height: 20rem;
     width: 100%;
     background: #3e4444;
-    margin-top: 2rem; }
+    margin-top: 5rem; }
 
 /*# sourceMappingURL=style.css.map */
