@@ -1,5 +1,22 @@
 /* Border reset with boder-box */
-
+@mixin flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; 
+	
+}
+@mixin skew($color, $deg){
+	content:'';
+		position: absolute; 
+		height: 50vh;
+		width: 100%;
+		position: absolute; 
+		background: $color;
+		transform: skewY($deg);
+		overflow: visible; 
+		z-index: -1;
+}
 html{
 	box-sizing: border-box;
 }
@@ -8,5 +25,51 @@ body{
 }
 *,*:before,*:after{
 	box-sizing: inherit;
-}
+	border:0;
+	padding: 0;
+	margin:0;
 
+}
+.container {
+  @include flex;
+  }
+
+section{
+	@include flex; 
+	height:45vh;
+	width: 100%;
+}
+.info-1{
+	&:before{
+		margin:{
+			top:-4rem;
+			bottom:0;
+		}
+		@include skew(#deeaee,6deg);
+	}
+ }
+.info-2{
+	margin:-2rem;
+	&:before{
+		@include skew(#92a8d1,6deg);
+	}
+}
+.info-3{
+	&:before{
+		@include skew(#034f84,-4deg);
+	}
+}
+.info-4{
+	margin-top: -3rem;
+	&:before{
+		@include skew(#3e4444,6deg);
+	}
+	&:after{
+		content: '';
+		position:absolute; 
+		height:20rem;
+		width: 100%; 
+		background: #3e4444;
+		margin-top: 2rem;
+	}
+}
