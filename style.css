@@ -1,0 +1,11 @@
+/* Border reset with boder-box */
+html {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/*# sourceMappingURL=style.css.map */
