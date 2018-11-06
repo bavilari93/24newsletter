@@ -23,11 +23,10 @@ section {
   justify-content: center;
   align-content: center;
   height: 45vh;
-  width: 100%;
-  flex-direction: block; }
+  width: 100%; }
 
 .info-1 {
-  margin: 0 auto;
+  flex-direction: block;
   color: #92a8d1; }
   .info-1:before {
     margin-top: -4rem;
@@ -46,7 +45,6 @@ section {
   .info-1 h2 {
     margin-top: 3rem;
     font-size: 2rem;
-    width: 100%;
     align-self: center; }
 
 .info-2 {
@@ -66,7 +64,7 @@ section {
 
 .info-3 {
   color: #3e4444;
-  font-size: 15rem;
+  font-size: 8rem;
   margin-top: -2rem; }
   .info-3:before {
     content: '';
@@ -78,6 +76,8 @@ section {
     transform: skewY(-4deg);
     overflow: visible;
     z-index: -1; }
+  .info-3 h1 {
+    margin-top: 5rem; }
 
 .info-4 {
   margin-top: -4rem; }
